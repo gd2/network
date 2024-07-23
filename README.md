@@ -1,49 +1,25 @@
 
 # Détecter les machines de son réseau local
 
+# Un petit éditeur de texte
+
+nano /etc/hosts
+
 # sudo
 
-Le fichier de conf 
+A revoir :
+
+Pour une connexion de toto en tant que root sans mot de passe à taper il faut éditer/créer sous root le fichier /etc/sudoers.d/10-nopasswd et placer la ligne :
+
+**toto doit être remplacé par le nom de l'utilisateur autorisé à se connecter root sans mot de passe**.
 
 ```
-Pour éviter le mdp
-
-
-#
-# This file MUST be edited with the 'visudo' command as root.
-#
-# Please consider adding local content in /etc/sudoers.d/ instead of
-# directly modifying this file.
-#
-# See the man page for details on how to write a sudoers file.
-#
-Defaults	env_reset
-Defaults	mail_badpass
-Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-
-# Host alias specification
-
-# User alias specification
-
-# Cmnd alias specification
-
-# User privilege specification
-root	ALL=(ALL:ALL) ALL
-
-# Allow members of group sudo to execute any command
-%sudo	ALL=NOPASSWD: ALL
-
-# See sudoers(5) for more information on "#include" directives:
-
-#includedir /etc/sudoers.d
-
+toto ALL=(ALL) NOPASSWD: ALL
 ```
 
 exit pour sortir de sudo.
 
-# Un petit éditeur de texte
 
-nano /etc/hosts
 
 # /etc/hosts
 
@@ -86,13 +62,19 @@ ssh-keygen -t rsa
 ```
 Garder les choix par défaut et pas de passphrase (vide)
 micro-1
-Copier la clé publique sur la machine à joindre
 
+Copier la clé publique sur la machine à joindre :
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub roberto@micro-1
+```
 
+Par la suite un ssh roberto@micro-1 se fera sans authentification par mot de passe.
 
-ssh-keygen -t rsa 
 # IA
 
 groq.com
 
+Avec un compte sur groq plus de possibilités sur :
+
+https://console.groq.com/playground
 
