@@ -39,6 +39,8 @@ root	ALL=(ALL:ALL) ALL
 
 ```
 
+exit pour sortir de sudo.
+
 # Un petit éditeur de texte
 
 nano /etc/hosts
@@ -61,6 +63,8 @@ ssh toto@machine
 
 Option -X pour accepter les fenetres
 
+exit pour quitter ssh
+
 # scp
 
 Comme la commande cp <source> <destination>
@@ -69,5 +73,13 @@ scp roberto@micro-1:test.txt .
 
 Le : signifie le home distant
 Le . signifie le répertoire courant
+
+```
+scp roberto@micro-1:test.txt  doc.txt
+scp essai.txt roberto@micro-1
+
+= IA
+
+groq.com
 
 
