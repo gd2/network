@@ -49,7 +49,7 @@ Correspondances entre IP nom
 
 ```
 192.168.1.63 dell
-92.168.1.20 micro-1
+192.168.1.20 micro-1
 
 ```
 
