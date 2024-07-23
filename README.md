@@ -39,7 +39,11 @@ root	ALL=(ALL:ALL) ALL
 
 ```
 
-### /etc/hosts
+# Un petit éditeur de texte
+
+nano /etc/hosts
+
+# /etc/hosts
 
 Correspondances entre IP nom
 
