@@ -58,3 +58,16 @@ Correspondances entre IP nom
 
 Commande de base
 ssh toto@machine
+
+Option -X pour accepter les fenetres
+
+# scp
+
+Comme la commande cp <source> <destination>
+
+scp roberto@micro-1: .
+
+Le : signifie le home distant
+Le . signifie le répertoire courant
+
+
