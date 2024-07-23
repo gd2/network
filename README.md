@@ -65,7 +65,7 @@ Option -X pour accepter les fenetres
 
 Comme la commande cp <source> <destination>
 
-scp roberto@micro-1: .
+scp roberto@micro-1:test.txt .
 
 Le : signifie le home distant
 Le . signifie le répertoire courant
