@@ -78,7 +78,19 @@ Le . signifie le répertoire courant
 scp roberto@micro-1:test.txt  doc.txt
 scp essai.txt roberto@micro-1:
 ```
+# Authentification ssh par clés
 
+Générer un couple de clés ssh de type rsa
+```
+ssh-keygen -t rsa 
+```
+Garder les choix par défaut et pas de passphrase (vide)
+micro-1
+Copier la clé publique sur la machine à joindre
+
+
+
+ssh-keygen -t rsa 
 # IA
 
 groq.com
