@@ -76,9 +76,9 @@ Le . signifie le répertoire courant
 
 ```
 scp roberto@micro-1:test.txt  doc.txt
-scp essai.txt roberto@micro-1
+scp essai.txt roberto@micro-1:
 
-= IA
+# IA
 
 groq.com
 
