@@ -39,7 +39,18 @@ root	ALL=(ALL:ALL) ALL
 
 ```
 
+### /etc/hosts
+
+Correspondances entre IP nom
+
+```
+1192.168.1.63 dell
+92.168.1.20 micro-1
+
+```
 
 
+# ssh
 
-``
+Commande de base
+ssh toto@machine
